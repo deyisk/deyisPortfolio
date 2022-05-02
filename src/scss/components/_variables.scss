@@ -2,4 +2,27 @@
 // VARIABLES SCSS
 // v1.0
 // ==========================================================================
-$text-color: #333333;
+$text-color: #111827;
+$rose-400: #fb7185;
+
+
+// Media
+// ==========================================================================
+$screen-xs: "(min-width:576px)";
+$screen-xs-max: "(min-width:575px)";
+
+
+$screen-sm: "(min-width:768px)";
+$screen-max: "(min-width:767px)";
+$screen-sm-only: "(min-width:576px) and (max-width:767px)";
+
+$screen-md: "(min-width:992px)";
+$screen-md-max: "(min-width:991px)";
+$screen-md-only: "(min-width:768px) and (max-width:991px)";
+
+$screen-lg: "(min-width:1200px)";
+$screen-lg-max: "(min-width:1199px)";
+$screen-lg-only: "(min-width:992px) and (max-width:1199px)";
+
+$screen-xl: "(min-width:1800px)";
+$screen-xl-max: "(min-width:1799px)";

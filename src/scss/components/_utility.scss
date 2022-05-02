@@ -4,6 +4,105 @@
 // ==========================================================================
 // Variables
 // ==========================================================================
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
 
-// Fixed Menu
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: $text-color;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+// Container
 // ==========================================================================
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+// Link
+// ==========================================================================
+a {
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  text-decoration: none;
+  transition: all .3s ease;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+// Button
+// ==========================================================================
+button,
+button.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 22px!important;
+  border-radius: 9px;
+  width: auto;
+  border: inherit;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-weight: 700;
+  color: inherit;
+  font-family: inherit;
+  transition: all .3s ease;
+}
+
+.btn-main {
+  background-color: $rose-400;
+  border: 1px solid $rose-400;
+
+  &:hover {
+    background-color: #fda4af;
+    border-color: #fda4af;
+  }
+}
+
+// Modal
+// ==========================================================================
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  background-color: #fff;
+  padding: 6rem;
+  border-radius: 6px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+ position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
