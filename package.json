@@ -9,9 +9,17 @@
     "build:watch": "webpack --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://lenof@bitbucket.org/lenof/deyiskarakas.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://lenof@bitbucket.org/lenof/deyiskarakas/issues"
+  },
+  "homepage": "https://lenof@bitbucket.org/lenof/deyiskarakas#readme",
   "devDependencies": {
     "css-loader": "^6.6.0",
     "css-minimizer-webpack-plugin": "^3.4.1",
