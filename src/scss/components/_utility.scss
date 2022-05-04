@@ -60,7 +60,7 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  @media #{$screen-md} {
+  @media #{$screen-lg} {
     width: 1200px;
   }
 }
@@ -141,4 +141,92 @@ button.btn {
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
   z-index: 5;
+}
+
+
+// Index
+// ==========================================================================
+.index-hero {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 4rem;
+
+  &-start {
+    width: 30%;
+  }
+
+  &-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+
+    .my-photo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding: 22px;
+      height: 28rem;
+      width: 20rem;
+      border-radius: 12rem;
+      border: 2px solid $gray-400;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12rem;
+      }
+    }
+  }
+
+  &-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 30%;
+    text-align: right;
+
+    .index-hero-section {
+      text-align: right;
+    }
+  }
+
+  &-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &-title {
+      font-size: 16px;
+      text-transform: uppercase;
+      color: $gray-400;
+      margin-bottom: 22px;
+    }
+  }
+
+  .index-hero-section + .index-hero-section {
+    margin-top: 3rem;
+  }
+}
+
+.tools-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+  font-size: 3rem;
+  color: $gray-400;
+  position: relative;
+  padding-bottom: 14rem;
+
+  i + i {
+    margin-left: 3rem;
+  }
 }

@@ -9,43 +9,45 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 60px;
+  height: 80px;
 
-  &-logo {
-    font-size: 18px;
-    font-weight: 600;
-  }
-
-  &-end {
+  &-start {
     a {
       position: relative;
-      transition: all .5s ease;
-      transition-duration: 1s;
-
-      &:before {
-        display: none;
-        content: '';
-        position: absolute;
-        bottom: -3px;
-        left: 50%;
-        transform: translate(-50%);
-        width: 12px;
-        height: 2px;
-        border-radius: 3px;
-        background-color: $text-color;
-        transition: all .5s ease;
-        transition-duration: 1s;
-      }
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: all .2s ease;
 
       &:hover {
-        &:before {
-          display: flex;
-        }
+        color: #fb7185;
       }
     }
 
     a + a {
-      margin-left: 10px;
+      margin-left: 12px;
+    }
+  }
+
+  &-logo {
+    font-size: 64px;
+    font-weight: 600;
+    color: $rose-400;
+  }
+
+  &-end {
+    a {
+      font-size: 18px;
+      position: relative;
+      transition: all .2s ease;
+
+      &:hover {
+        color: #fb7185;
+      }
+    }
+
+    a + a {
+      margin-left: 12px;
     }
 
     .btn {
