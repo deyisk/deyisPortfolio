@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="css/index.min.css">
 </head>
 <body>
-<div class="container">
+<div class="main-container">
+    <div class="button-dark">
+        <button onClick="darkMode()" id="dark" class="darkMode fas fa-moon"></button>
+
+    </div>
     <div class="header">
         <div class="header-start">
-            <a href="#egitim">Egitim</a>
-            <a href="#kurslar">Kurslar</a>
+            <a href="resume" target="_blank" rel="noopener">Resume</a>
         </div>
         <div class="header-center">
             <span class="header-logo">
@@ -22,59 +25,68 @@
             </span>
         </div>
         <div class="header-end">
-            <a href="#" class="show-modal"><i class="fa-solid fa-phone"></i></a>
-            <a href="#kurslar"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#hobi"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="show-modal">
+                <i class="fa-solid fa-phone"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/deyiskarakas">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.github.com/deyisk">
+                <i class="fab fa-github"></i>
+            </a> 
         </div>
     </div>
-</div>
 
 <div class="container">
     <div class="text-center mt-5">
-        <h1>Deyis Karakas</h1>
-        <h2>FRONT-END DEVELOPER</h2>
+        <h2>Hello! I'm Deyis Karakas</h2><br>
+        <h4>I'm a Front End Developer based in Munich</h4>
     </div>
     <div class="index-hero">
         <div class="index-hero-start">
             <div class="index-hero-section">
                 <span class="index-hero-section-title">
-                    Biyografi
+                    About Me
                 </span>
                 <span class="index-hero-section-content">
-                Work for money and design for live! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam architecto culpa fugit maiores omnis optio, placeat suscipit voluptatibus. Dicta?
-            </span>
+                    I'm a Front-End Developer located in Germany. I have serious passion for UI and dynamic user experience. <br>
+                    I enjoy playing tennis in my spare time also love comics!
+                </span>
             </div>
             <div class="index-hero-section">
                 <span class="index-hero-section-title">
-                    Iletisim
+                    Projects
                 </span>
-                <span class="index-hero-section-content">
-                    Demostr. 7, <br>
-                    71229 Leonberg <br>
-                    +49 123 456 78
-                </span>
+                <span class="index-hero-section-info">
+                <a href="https://stoktakipprogrami.netlify.app/login">Stock Tracking Application</a>
+                <a href="https://www.linkedin.com">Finance Tracking Application</a>
+                <a href="https://www.linkedin.com">Memory Game</a>
+                <a href="https://www.linkedin.com">Movie Store</a>
+            </span>
             </div>
         </div>
         <div class="index-hero-center">
             <div class="my-photo">
-                <img src="./assets/images/deyis.jpeg" alt="deyis karakas">
+                <img src="/assets/images/deyis.jpg" alt="deyis karakas">
             </div>
         </div>
         <div class="index-hero-end">
             <div class="index-hero-section">
                 <span class="index-hero-section-title">
-                    Hobiler
+                   Skills
                 </span>
                 <span class="index-hero-section-content">
-                    Work for money and design for live! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam architecto culpa fugit maiores omnis optio, placeat suscipit voluptatibus. Dicta?
+                    Well-organised person, problem solver, independent employee with high attention to detail. <br>
+                    Interested in the entire frontend spectrum and working on ambitious projects with positive people.
                 </span>
             </div>
             <div class="index-hero-section">
                 <span class="index-hero-section-title">
-                    Projeler
+                    Resume
                 </span>
                 <span class="index-hero-section-content">
-                    <span>www.demo.com</span>
+                    <a href="/src/assets/resume.pdf" download="pdf">Resume link</a>
+                    <!-- <button onclick="demo()">A</button> -->
                 </span>
             </div>
         </div>
@@ -90,12 +102,140 @@
         <i class="fa-brands fa-laravel"></i>
     </div>
 </div>
+
+<div class="container">
 <div class="modal hidden">
     <button class="close-modal">x</button>
-    <h1>Modal</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, velit!</p>
+    <h2 class="contact">Contact</h2>
+    <div class="icons">
+    <i class="fa-solid fa-phone fa-fw"></i>
+    <p>+491634573191</p> <br>
+    <i class="fa fa-envelope fa-fw"></i>
+    <p>deyiskarakas7@gmail.com</p>
+    <i class=""></i>
+    </div>
 </div>
 <div class="overlay hidden"></div>
-<script src="js/index.bundle.js"></script>
+    <div class="index-footer">
+    <div class="index-footer-start">
+        <div class="button">
+                <button class="button-one">
+                    <a href="mailto:deyiskarakas7@gmail.com">Mail me!</a>
+                </button>
+        </div>
+    </div>
+    </div>
+    <div class="index-footer-content" style="margin-left: 2rem; font-size: 24px;">
+        <span><b>MY PROJECTS</b></span>
+    </div>
+
+    <div class="index-footer-center">
+        <div class="widgets">
+           
+
+            <div class="widget-two">
+                <div class="widget-two-header">
+                    <div class="photo-marketapp">
+                        <img src="/assets/images/market.jpeg">
+                    </div>
+
+                </div>
+                <div class="widget-two-body">
+                    <span><b>Market App</b></span>
+
+                </div>
+                <div class="widget-two-footer">A sketch I started developing for a Supermarket in Germany. 
+                    It consists of a simple interface.
+                    Widgets seen on the homepage allow users to see which product has a discount.</div>
+            </div>
+
+            <div class="widget-one">
+                <div class="widget-one-header">
+                    <div class="photo-stocktracking">
+                        <img src="/assets/images/stock.jpeg">
+                    </div>
+                </div>
+                <div class="widget-one-body">
+                    <span><b>Stock Tracking App</b></span>
+                </div>
+                <div class="widget-one-footer">
+                    <span>It is an application that enables companies
+                         to follow their products and stock more easily. I created this project for a company in software area.</span>
+                </div>
+            </div>
+
+
+            <div class="widget-three">
+                <div class="widget-three-header">
+                    <div class="photo-memorygame">
+                        <img src="/assets/images/memory.jpeg" alt="memory game">
+                    </div>
+
+                </div>
+                <div class="widget-three-body">
+                    <span><b>Memory Game</b></span>
+
+                </div>
+                <div class="widget-three-footer">I wrote the memory game, 
+                    which is the most used area of ​​JavaScript, 
+                    with my own code technique!</div>
+            </div>
+
+
+            
+        </div>
+    </div>
+
+ 
+
+</div>
+
+</div>
+<script>
+
+
+function darkMode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+
+}
+
+
+"use strict";
+
+const modal = document.querySelector(".modal");
+const overlay = document.querySelector(".overlay");
+const btnCloseModal = document.querySelector(".close-modal");
+const btnOpenModal = document.querySelectorAll(".show-modal");
+
+const openModal = function () {
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+};
+
+const closeModal = function () {
+  modal.classList.add("hidden");
+  overlay.classList.add("hidden");
+};
+
+for (let i = 0; i < btnOpenModal.length; i++)
+  btnOpenModal[i].addEventListener("click", openModal);
+
+btnCloseModal.addEventListener("click", closeModal);
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+    closeModal();
+  }
+});
+
+
+</script>
 </body>
 </html>
+
+
+
+
+
+

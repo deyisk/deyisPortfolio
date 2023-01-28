@@ -1,3 +1,6 @@
 import "./style.scss";
 import "./js/modal";
-import "./assets/images/deyis.jpeg";
+import "./assets/images/deyis.jpg";
+import "./assets/images/memory.jpeg";
+import "./assets/images/stock.jpeg";
+import "./assets/images/market.jpeg";

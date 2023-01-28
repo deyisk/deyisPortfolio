@@ -4,30 +4,46 @@
 // ==========================================================================
 // Body Fixed
 // ==========================================================================
-body {
-    color: $text-color;
+%body-fixed {
+  color: $text-color;
 }
-// Controll
-// ==========================================================================
-.text-center {
-    text-align: center;
+%text-center-fixed {
+  text-align: center;
 }
-
-h1, .h1 {
-    font-size: 4rem;
-    font-weight: 900;
-    line-height: 1.6;
-    margin: 0;
+%body-h1-fixed {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1.6;
+  margin: 0;
 }
-
-h2, .h2 {
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: .6;
+%body-h2-fixed {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 0.6;
 }
-
 .mt {
-    &-5 {
-       margin-top: 5rem;
-    }
+  &-5 {
+    margin-top: 5rem;
+  }
+}
+
+%container-fixed {
+  border-radius: 5px;
+  padding: 10px;
+}
+.text-center {
+  @extend %text-center-fixed;
+}
+// Controller
+
+.body {
+  @extend %body-fixed;
+
+  &-h1 {
+    @extend %body-h1-fixed;
+  }
+
+  &-h2 {
+    @extend %body-h2-fixed;
+  }
 }
