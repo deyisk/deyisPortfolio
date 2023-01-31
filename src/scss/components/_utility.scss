@@ -53,6 +53,12 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+%header-center-fixed {
+  margin-left: 105px;
+  padding: 90px;
+  margin: auto;
+}
+
 body {
   color: #111827;
   font-size: 16px;
@@ -281,7 +287,17 @@ button.btn {
 }
 
 %index-hero-section-info {
-  display: grid;
+  a {
+    position: relative;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: #fb7185;
+    }
+  }
+}
+
+%index-hero-section-content {
   a {
     position: relative;
     transition: all 0.2s ease;
@@ -491,12 +507,13 @@ button.btn {
   }
 
   .modal {
-    background-color: rgb(143, 81, 94);
+    background-color: #fda4af;
+
     color: #111827;
   }
 
   .icons {
-    background-color: rgb(143, 81, 94);
+    background-color: #fda4af;
   }
 }
 
@@ -644,4 +661,12 @@ button.btn {
 
 .index-footer-section-content {
   @extend %index-footer-section-content;
+}
+
+.hedaer-center {
+  @extend %header-center-fixed;
+}
+
+.index-hero-section-content {
+  @extend %index-hero-section-content;
 }
