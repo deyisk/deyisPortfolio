@@ -1,4 +1,5 @@
 {
+  "homepage": "https://deyisk.github.io/",
   "name": "deyiskarakas",
   "version": "1.0.0",
   "description": "",
@@ -7,7 +8,9 @@
     "dev": "webpack serve --open --mode development",
     "build": "webpack --mode production",
     "build:watch": "webpack --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +19,7 @@
     "css-loader": "^6.6.0",
     "css-minimizer-webpack-plugin": "^3.4.1",
     "file-loader": "^6.2.0",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.5.3",
     "postcss": "^8.4.6",
